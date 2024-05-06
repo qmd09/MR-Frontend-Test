@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>T-Shirt Product Page</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/ae71c516a4.js" crossorigin="anonymous"></script>
+
+ </head>
+ <body>
+  <header>
+    <div class="header_container">
+      <div class="miniCart_container" id="miniCart_container">
+        <div class="miniCart_myCart_container" id="miniCart_myCart_container"> 
+          <span id="cartIcon">My Cart</span> 
+          <span id="totalQty"></span>
+          <div class="whitespace"></div>
+
+        </div>
+        
+        <div class="miniCart_dropdown_container" id="miniCart_dropdown_container">
+          <div>There are no items in your shopping cart</div>
+          <template id="miniCartItemTemplate">
+            <div class="miniCartItem_container">
+              <img class="miniCartItem_image" src="" alt="Product Image">
+              <div class="miniCartItem_details">
+                <div class="miniCartItem_name"></div>
+                <div class="miniCartItem_qtyPrice">
+                </div>
+                <div class="miniCartItem_size"></div>
+              </div>
+            </div>
+          </template>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="product_container">
+      <div class="product_gallery_container">
+        <img class="product_image" id="productPageImage" src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpiha3A1N6SU-qdRp94-M39GRiDdcxx1qG-EQfxTLHYYeaYCXy6NFf4OGvgBOPpmE2jIE5wzrgpx8nXnqw9f1P41FTBEyrBjwdd8me89HQKSjrpyQh3uKqvUjDjnQUXqmSBg=w1720-h1328-rw-v1">
+      </div>
+      <div class="product_info_container">
+        <h1 class="product_title" id="productPageName">
+          Loading
+        </h1>
+        <div class="product_price_container">
+          <div class="product_price" id="productPagePrice">
+            Loading
+          </div>
+        </div>
+        <div class="product_description_container">
+          <div class="product_description" id="productPageDescription">
+            Loading
+          </div>
+        </div>
+        <div class="product_size_container">
+          <label>SIZE<span class="star">*</span></label>
+          <div id="productPageSize" class="product_size_options">
+            <!-- Each option will be generated using JS -->
+          </div>
+          <div class="product_size_warning" id="product_size_warning">
+
+          </div>
+        </div>
+        <div class="product_addToCart_container">
+          <button id="addToCartButton" class="addToCartButton">ADD TO CART</button>
+        </div>
+      </div>
+    </div>
+  
+
+  </main>
+  <script src="script.js"></script>
+ </body>
+</html>

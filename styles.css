@@ -1,0 +1,242 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+header {
+    background-color: #F6F6F7;
+    width: 85%;
+    margin:auto;
+    margin-top:1rem;
+}
+
+main {
+    margin:auto;
+    width: 75%;
+}
+
+
+
+.header_container {
+    width: 75%;
+    margin: auto;
+    display: block;
+
+}
+
+.miniCart_container {
+    direction:rtl;
+    cursor: pointer;
+    font-size: 0.75rem;
+}
+
+.miniCart_myCart_container {
+    width:fit-content;
+    padding: 0.5rem;
+    color:#888888;
+    position: relative;
+    direction: ltr;
+}
+.miniCart_myCart_container.active {
+    border: 1px solid #CCCCCC;
+    border-bottom: 0;
+    background-color: white;
+}
+.whitespace {
+    width: 100%;
+    height: 1px;
+    background: white;
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+    z-index: 099;
+
+}
+.filler {
+    position: absolute;
+    top: -4px;
+    right: 0;
+    border-top: 1px solid white;
+    padding: 0 0.5rem;
+    z-index: 99;
+    color: white;
+    background: white;
+}
+.miniCart_dropdown_container {
+    position: absolute;
+    direction: ltr;
+    display: none;
+    border: 1px solid #CCCCCC;
+    padding: 1rem;
+    background-color: white;
+}
+
+.miniCart_dropdown_container.active {
+    display: block;
+}
+
+.miniCartItem_container {
+    display: flex;
+    margin-top:2rem;
+    margin-bottom: 1.5rem;
+    width: 250px;
+}
+.miniCartItem_image {
+    max-width: auto;
+    height: 130px;
+}
+.miniCartItem_details {
+    flex: 1;
+    margin-right: 1rem;
+}
+.miniCartItem_name {
+    color: #222222;
+}
+.miniCartItem_qtyPrice {
+    font-weight: bold;
+    margin: 1rem 0rem;
+}
+
+
+
+
+main {
+    color: #888888;
+}
+.product_container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.product_gallery_container {
+    flex: 1;
+    max-width: 50%;
+}
+.product_image {
+    width: 80%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin:auto;
+}
+.product_info_container {
+    flex: 1;
+    max-width: 50%;
+    padding-left: 2rem;
+}
+.product_title {
+    font-weight: normal !important;
+    color: #222222;
+    font-size: 1.5rem;
+}
+.product_price {
+    margin: 1rem 0rem;
+    color: #222222;
+    font-weight: bold;
+}
+.product_description {
+    margin: 1rem 0rem;
+}
+.product_size_container {
+    margin: 3rem 0rem 1rem 0rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.star {
+    color: #C90000;
+}
+
+.product_size_options {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    margin: 1rem 0rem;
+}
+
+.product_size_singleOption {
+    border: 1px solid #CCCCCC;
+    width: 2.75rem;
+    height: 2.75rem;
+    text-align: center;
+    line-height: 2.75rem;
+    margin-right: 1rem;
+}
+
+.selected {
+    border: 2px solid #222222;
+    color: #222222;
+}
+.product_size_warning {
+    color: #C90000;
+    font-weight: bold;
+}
+.addToCartButton {
+    text-transform: capitalize;
+    color: #222222;
+    background-color: white;
+    border: 2px solid #222222;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.addToCartButton:hover {
+    background-color: #222222;
+    color: white;
+}
+
+@media (max-width: 1024px) {
+    header {
+        width: 90%;
+    }
+    .header_container {
+        width: 85%;
+    }
+    main {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 0px;
+    }
+    header {
+        width: 100%;
+        max-width: 100%;
+    }
+    main {
+        max-width: 100%;
+        width: 100%;
+    }
+    .product_container {
+        display: block;
+        align-items: center;
+        width: 100%;
+        margin: 1rem ;
+        max-width: 95%;
+    }
+    .product_gallery_container {
+        max-width: 97.5%;
+        flex: unset;
+    }
+    .product_image {
+        width: 100%;
+    }
+    .product_info_container {
+        max-width: 100%;
+        padding:0;
+    }
+    .miniCartItem_image {
+        height: 100px;
+    }
+    .miniCartItem_details {
+        padding-left: 1rem;
+    }
+}
